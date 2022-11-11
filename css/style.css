@@ -1,0 +1,61 @@
+/* Estilização da pagina de voto */
+.titulo{
+    text-align: center;
+}
+.conteudo{
+
+}
+.formularios{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.selecao-voto form{
+    display: flex;
+    flex-direction: column;
+}
+.selecao-voto form label{
+    font-size: 16px;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.selecao-voto{
+    text-align: center;
+}
+.svg-candidato{
+    width: 120px;
+    height: 140px;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.caixa-candidato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn-confirmar{
+    position: relative;
+    left: 130px;
+    top: 20px;
+    background:red;
+    padding: 10px;
+    transition: 2s;
+}
+#btn-confirmar-nulo{
+    position: relative;
+    right: 130px;
+    top: 20px;
+    background:green;
+    padding: 10px;
+    transition: 2s;
+}
+.btn-ativar{
+    background: unset;
+    border: unset;
+}
+.active{
+    border: 5px solid blue;
+}
