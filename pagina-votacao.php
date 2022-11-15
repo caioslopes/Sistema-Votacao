@@ -11,7 +11,8 @@
     
 <?php
     include_once('database.php');
-    include_once('includes/login.php');
+    include_once('includes/protect-login.php');
+    include_once('includes/painel-voto.php');
 ?>
 <script src="js/script.js"></script>
 </body>

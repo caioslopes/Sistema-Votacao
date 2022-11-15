@@ -1,61 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Pagina inicial/login */
+.caixa-formulario {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-formulario {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.formulario-senha {
+    border: 1px solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario-senha div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.formulario-senha div:nth-child(1) input {
+    height: 30px;
+    font-size: 20px;
+}
+.formulario-senha input[type="submit"] {
+    padding: 10px;
+    background: #23232d;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+}
+.formulario-senha input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #23232e;
+}
 /* Estilização da pagina de voto */
-.titulo{
+body {
+    background-color: #23232e;
+}
+.corpo {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.titulo-geral {
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px;
+}
+.titulo {
     text-align: center;
 }
-.conteudo{
-
+.conteudo {
+    width: 900px;
+    border: 1px solid;
+    min-height: 400px;
 }
-.formularios{
+.formularios {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
-.selecao-voto form{
+.selecao-voto form {
     display: flex;
     flex-direction: column;
 }
-.selecao-voto form label{
+.selecao-voto form label {
     font-size: 16px;
     border: 1px solid;
     padding: 5px;
     margin-top: 10px;
     text-transform: uppercase;
 }
-.selecao-voto{
+.selecao-voto {
     text-align: center;
 }
-.svg-candidato{
+.btn-ativar:hover {
+    cursor: pointer;
+}
+.svg-candidato {
     width: 120px;
     height: 140px;
     border: 2px solid;
     padding: 10px;
     border-radius: 10px;
+    color: #23232e;
+    fill: white;
 }
-.caixa-candidato{
+.caixa-candidato {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#btn-confirmar{
+#btn-confirmar {
     position: relative;
     left: 130px;
     top: 20px;
-    background:red;
     padding: 10px;
-    transition: 2s;
+    color: white;
+    background: #23232e;
+    border: 1px solid;
+    font-weight: 900;
+    text-transform: uppercase;
 }
-#btn-confirmar-nulo{
+#btn-confirmar:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #23232e;
+}
+#btn-confirmar-nulo {
     position: relative;
     right: 130px;
     top: 20px;
-    background:green;
     padding: 10px;
-    transition: 2s;
+    color: white;
+    background: #23232e;
+    border: 1px solid;
+    font-weight: 900;
+    text-transform: uppercase;
 }
-.btn-ativar{
+#btn-confirmar-nulo:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #23232e;
+}
+.btn-ativar {
     background: unset;
     border: unset;
 }
-.active{
-    border: 5px solid blue;
+.active {
+    border: 2px solid white;
+}
+.gerar-relatorio {
+    color: white;
+    border: 1px solid;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.gerar-relatorio a {
+    color: white;
+    text-decoration: none;
+}
+.gerar-relatorio:hover {
+    cursor: pointer;
+    background-color: white;
+}
+.gerar-relatorio:hover a {
+    color: #23232e;
+}
+/* Página agradecimento */
+.caixa-aguarde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa-aguarde a {
+    border: 1px solid;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.caixa-aguarde a:hover {
+    background-color: white;
+    color: #23232e;
+}
+.conteudo-agradecimento {
+    width: 900px;
+    border: 1px solid;
+}
+/* Página Relátorio */
+.alert-relatorio {
+    width: 900px;
+    border: 1px solid;
+    padding-bottom: 20px;
+}
+.baixar-relatorio {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.baixar-relatorio a {
+    color: white;
+    padding: 10px;
+    border: 1px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.baixar-relatorio a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #23232e;
 }

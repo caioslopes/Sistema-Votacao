@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Votação</title>
+    <title>Relátorio</title>
 </head>
 <body>
     
 <?php
     include_once('database.php');
-    include_once('includes/login.php');
+    include_once('includes/relatorio.php');
 ?>
 <script src="js/script.js"></script>
 </body>
