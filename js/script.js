@@ -30,25 +30,18 @@ function Nulo() {
         document.getElementById("nulo-id").classList.remove("active");
     }
 }
+/* Função tocar audio */
+var clickVoto = new Audio('audio/click-voto.wav');
+var clickConfirmar = new Audio('audio/click-confirmar.wav');
 
-let time = 5;
-let initialOffset = 149;
-let i = 4;
+/* Audio 1 */
+document.getElementById('btn-candidato').onclick = () => {
+    Candidato();
+    clickVoto.play();
+}
 
-$(".circle_animation").css("stroke-dashoffset", 1);
-
-let interval = setInterval(function () {
-    $("h2").text(i);
-
-    if (i == 0) {
-        clearInterval(interval);
-        window.location.href = "index.php";
-        return;
-    }
-
-    $(".circle_animation").css(
-        "stroke-dashoffset",
-        (time - i + 1) * (initialOffset / time)
-    );
-    i--;
-}, 1000);
+/* Audio 2 */
+document.getElementById('btn-nulo').onclick = () => {
+    Nulo();
+    clickVoto.play();
+}

@@ -37,5 +37,29 @@
     include_once('includes/agradecimento.php');
 ?>
 <script src="js/script.js"></script>
+<script>
+    /* Contador regressivo animado circular */
+    let time = 5;
+    let initialOffset = 149;
+    let i = 4;
+
+    $(".circle_animation").css("stroke-dashoffset", 1);
+    clickConfirmar.play();    
+    let interval = setInterval(function () {
+        $("h2").text(i);
+
+        if (i == 0) {
+            clearInterval(interval);
+            window.location.href = "index.php";
+            return;
+        }
+
+        $(".circle_animation").css(
+            "stroke-dashoffset",
+            (time - i + 1) * (initialOffset / time)
+        );
+        i--;
+    }, 1000);
+</script>
 </body>
 </html>

@@ -105,15 +105,15 @@ body {
     top: 20px;
     padding: 10px;
     color: white;
-    background: #23232e;
+    background: green;
     border: 1px solid;
     font-weight: 900;
     text-transform: uppercase;
+    border: unset;
 }
 #btn-confirmar:hover {
     cursor: pointer;
-    background-color: white;
-    color: #23232e;
+    background: #2c9a2c;
 }
 #btn-confirmar-nulo {
     position: relative;
@@ -121,15 +121,16 @@ body {
     top: 20px;
     padding: 10px;
     color: white;
-    background: #23232e;
+    background: green;
     border: 1px solid;
     font-weight: 900;
     text-transform: uppercase;
+    border: unset;
+
 }
 #btn-confirmar-nulo:hover {
     cursor: pointer;
-    background-color: white;
-    color: #23232e;
+    background: #2c9a2c;
 }
 .btn-ativar {
     background: unset;
